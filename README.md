@@ -1,8 +1,8 @@
-# Phaser Parcel Template
+# Phaser Parcel TypeScript Template
 
-This is a Phaser 3 project template that uses Parcel for bundling. It supports hot-reloading for quick development workflow and includes scripts to generate production-ready builds.
+This is a Phaser 3 project template that uses Parcel for bundling. It supports hot-reloading for quick development workflow, includes TypeScript support and includes scripts to generate production-ready builds.
 
-**[This Template is also available as a TypeScript version.](https://github.com/phaserjs/template-parcel-ts)**
+**[This Template is also available as a JavaScript version.](https://github.com/phaserjs/template-parcel)**
 
 ### Versions
 
@@ -10,6 +10,7 @@ This template has been updated for:
 
 - [Phaser 3.86.0](https://github.com/phaserjs/phaser)
 - [Parcel 2.12.0](https://github.com/parcel-bundler/parcel)
+- [TypeScript 5.4.5](https://github.com/microsoft/TypeScript)
 
 ![screenshot](screenshot.png)
 
@@ -41,13 +42,14 @@ We have provided a default project structure to get you started. This is as foll
 
 - `index.html` - A basic HTML page to contain the game.
 - `src` - Contains the game source code.
-- `src/main.js` - The main entry point. This contains the game configuration and starts the game.
+- `src/main.ts` - The main entry point. This contains the game configuration and starts the game.
+- `src/global.d.ts` - Global TypeScript declarations, provide types information.
 - `src/scenes/` - The Phaser Scenes are in this folder.
 - `public/assets` - Contains the static assets used by the game.
 
 ## Handling Assets
 
-Parcel supports loading assets via JavaScript module `import` statements, which is the recommended way to do it for Parcel.
+Parcel supports loading assets via JavaScript module `import` statements.
 
 This template provides support for both embedding assets and also loading them from a static folder. To embed an asset, you can import it at the top of the JavaScript file you are using it in:
 
